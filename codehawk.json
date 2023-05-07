@@ -1,0 +1,9 @@
+{
+    "skipDirectories": [
+        "/node_modules",
+        "coverage"
+    ],
+    "badgesDirectory": [
+        "/generated"
+    ]
+}

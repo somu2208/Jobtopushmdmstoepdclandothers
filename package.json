@@ -1,0 +1,44 @@
+{
+  "name": "node-cron",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --experimental-specifier-resolution=node ./app.js",
+    "getrequestsandpushtomdas": "nodemon --experimental-specifier-resolution=node ./getrequestsandpushtomdas.js",
+    "insertgetrequeststomdas": "nodemon --experimental-specifier-resolution=node ./insertgetrequeststomdas.js",
+    "meterdatafromcptoepdcl": "nodemon --experimental-specifier-resolution=node ./meterdatafromcptoepdcl.js",
+    "meterdatafrommdmstocp": "nodemon --experimental-specifier-resolution=node ./meterdatafrommdmstocp.js",
+    "pushrequeststatustocp": "nodemon --experimental-specifier-resolution=node ./pushrequeststatustocp.js",
+    "pushrequeststoapi": "nodemon --experimental-specifier-resolution=node ./pushrequeststoapi.js",
+    "insertgetbalancerequeststomdas": "nodemon --experimental-specifier-resolution=node ./insertgetbalancerequeststomdas.js",
+    "processinprocessrequestsfommdas": "nodemon --experimental-specifier-resolution=node ./processinprocessrequestsfommdas.js",
+    "pushrequestsfromcptomdms": "nodemon --experimental-specifier-resolution=node ./pushrequestsfromcptomdms.js",
+    "codehawk": "codehawk src"
+  },
+  "dependencies": {
+    "async-await-parallel": "^1.0.0",
+    "async-parallel": "^1.2.3",
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^14.3.2",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "moment": "^2.29.1",
+    "mongodb": "^4.3.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "node-cron": "^3.0.0",
+    "short-unique-id": "^4.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "codehawk-cli": "^8.3.1",
+    "nodemon": "^2.0.15"
+  },
+  "type": "module"
+}
